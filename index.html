@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini-Django | Single-File Hybrid Django & Dual-Pass AI Framework</title>
+
+    <!-- Global SEO Meta Tags -->
+    <meta name="description" content="Gemini-Django is a single-file hybrid architecture merging production-grade Django WSGI/ASGI backends with dual-pass AI reasoning pipelines powered by gemini-2.5-flash and gemini-2.5-pro.">
+    <meta name="keywords" content="Django, Gemini API, Dual-Pass AI, Single File Python, Python Backend, Web Development, Artificial Intelligence">
+    <meta name="author" content="Rayaan Tasnim">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/rayaantasnim/Gemini-Django">
+    <meta property="og:title" content="Gemini-Django | Single-File Hybrid Django & Dual-Pass AI Framework">
+    <meta property="og:description" content="Streamlined single-file Python web framework combining Django programmatic runtime configurations with dual-pass AI reasoning.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://github.com/rayaantasnim/Gemini-Django">
+    <meta name="twitter:title" content="Gemini-Django | Single-File Hybrid Framework">
+    <meta name="twitter:description" content="Production-ready Django backend and dual-pass Gemini AI orchestration contained within a single Python script.">
+    <meta name="twitter:image" content="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json" src="schema.js"></script>
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome v6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GSAP & ScrollTrigger Plugin CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- STICKY NAVIGATION BAR -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand-logo">
+                <span class="dot"></span> Gemini-Django
+            </a>
+            
+            <!-- Pure CSS Hamburger Trigger -->
+            <button class="hamburger" id="hamburger-trigger" aria-label="Toggle Navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- GSAP OVERLAY NAVIGATION CANVAS -->
+    <div class="nav-overlay" id="nav-overlay">
+        <button class="close-btn" id="close-trigger" aria-label="Close Navigation">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h1 class="navbar-heading">Navigation Topology</h1>
+        
+        <ul class="overlay-links">
+            <li><a href="#hero" class="nav-link">01. Architecture Overview</a></li>
+            <li><a href="#pipelines" class="nav-link">02. Core Pipelines</a></li>
+            <li><a href="#characteristics" class="nav-link">03. Ten Engine Pillars</a></li>
+            <li><a href="#conclusion" class="nav-link">04. Synthesis & Repository</a></li>
+        </ul>
+
+        <a href="https://github.com/rayaantasnim/Gemini-Django" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i> View GitHub Repository
+        </a>
+    </div>
+
+    <!-- HERO BANNER SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-text-block">
+                <div class="hero-badge">
+                    <i class="fa-solid fa-bolt"></i> Single-File Hybrid Architecture
+                </div>
+                <h1>Django Backend & Dual-Pass AI in One Core Script</h1>
+                <p>
+                    Gemini-Django eliminates conventional repository sprawl by housing a full-scale, enterprise-ready Django Web Server and a high-reasoning dual-pass Gemini AI synthesis pipeline within a completely standalone <code>main.py</code> entry point. Engineered for extreme efficiency, backend engineers can now execute high-performance HTTP web servers, secure dynamic URL pattern routing, and dual-pass model orchestration without orchestrating multi-directory boilerplate. Designed for cloud microservices, fast edge prototyping, and low-latency cognitive processing, Gemini-Django encapsulates full-stack power into a singular executable file.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="#pipelines" class="btn btn-primary">
+                        Explore Backend Engine <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/rayaantasnim/Gemini-Django" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fa-brands fa-github"></i> Repository Access
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Software Architecture Blueprint">
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PIPELINE ARCHITECTURES (VERTICAL LAYOUT) -->
+    <section class="pipeline-section" id="pipelines">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">System Design</span>
+                <h2>Four Core Pipeline Architectures</h2>
+                <p>A unified single-file backend built upon dual-pass cognitive pipelines and zero-boilerplate runtime configurations.</p>
+            </div>
+
+            <div class="pipeline-cards">
+                <!-- CARD 01 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">PASS 01</span>
+                        <h3>Intent Flash Preprocessor</h3>
+                        <p>
+                            The first pass of the execution pipeline harnesses <code>gemini-2.5-flash</code> to establish high-speed, low-latency preprocessing of all inbound request payloads. By capturing incoming HTTP parameter vectors, validating inputs against tight JSON schemas, and running automated token-sanitization logic, Pass 1 shields the downstream application from context overflow and malicious payload injections. This preprocessor operates in milliseconds, structuring raw client input into clean, structured context objects before handing execution over to higher reasoning tiers.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Flash Preprocessor Visual">
+                    </div>
+                </div>
+
+                <!-- CARD 02 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">PASS 02</span>
+                        <h3>High-Reasoning Execution Engine</h3>
+                        <p>
+                            Once preprocessed, context vectors are dispatched into Pass 2, powered by <code>gemini-2.5-pro</code>. This phase is dedicated strictly to heavy cognitive synthesis, multi-step programmatic logic validation, and complex algorithmic compilation. By separating initial intent classification from heavy reasoning, Gemini-Django ensures that cost-expensive tokens are spent only on validated structural prompts, achieving optimized inference economics while maintaining deep enterprise-grade analytical performance across every generated response.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Execution Engine Logic">
+                    </div>
+                </div>
+
+                <!-- CARD 03 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">CONFIG 03</span>
+                        <h3>Hybrid Programmatic Configuration</h3>
+                        <p>
+                            Gemini-Django completely bypasses traditional <code>settings.py</code> dependency graphs through inline programmatic settings overrides via <code>django.conf.settings.configure()</code>. Developers declare installed apps, dynamic middleware chains, security secret keys, database engine drivers, and template loaders directly within execution blocks. This guarantees complete environment portability, enabling deployment inside isolated serverless functions, containerized microservices, or single-file test scripts without external directory overhead.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Programmatic Settings Code">
+                    </div>
+                </div>
+
+                <!-- CARD 04 -->
+                <div class="pipeline-card">
+                    <div class="pipeline-content">
+                        <span class="pipeline-number">AUTH 04</span>
+                        <h3>Zero-Persistence Authentication Gateway</h3>
+                        <p>
+                            System security is maintained through a secure runtime terminal prompt loop utilizing native <code>getpass</code> execution gates during initialization. API credentials and database access keys are injected directly into ephemeral runtime memory, preventing sensitive authorization strings from lingering in environment configuration files or repository history. This zero-persistence mechanism ensures compliance with strict enterprise security profiles without requiring complex external secret management tools during fast prototyping.
+                        </p>
+                    </div>
+                    <div class="pipeline-image">
+                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Security Terminal Gateway">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEN CHARACTERISTICS SECTIONS -->
+    <section class="characteristics-section" id="characteristics">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">Deep Dive</span>
+                <h2>Ten Core Technical Characteristics</h2>
+                <p>Architectural highlights showcasing how single-file constraints drive superior software design and processing performance.</p>
+            </div>
+
+            <!-- ROW 01 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-folder-minus"></i></div>
+                    <h3>01. Multi-Directory Boilerplate Elimination</h3>
+                    <p>
+                        Traditional Django projects force developers to manage multi-tiered directory structures spanning apps, settings, migrations, and routing files. Gemini-Django isolates and condenses all critical architectural layers into a unified script. By eliminating external module dependencies and project setup overhead, developers can prototype, test, and deploy entire web services instantly while reducing deployment bugs associated with broken relative path references and missing nested packages.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Clean Code File Structure">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 02 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>02. Programmatic Runtime Configuration</h3>
+                    <p>
+                        By leveraging direct dictionary mappings inside runtime settings calls, Gemini-Django allows developers to dynamically inject environment configuration flags at execution time. Whether switching between SQLite memory stores for local testing or PostgreSQL adapter pools for production clusters, settings are configured programmatically based on runtime environment inspections, completely avoiding hardcoded static settings structures.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Runtime Configuration Matrix">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 03 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>03. Dual-Pass Token Orchestration</h3>
+                    <p>
+                        Cognitive AI tasks are balanced through dual-pass model orchestration. By utilizing <code>gemini-2.5-flash</code> for rapid initial intent classification and routing heavy context workloads to <code>gemini-2.5-pro</code>, token usage is systematically optimized. This algorithmic load distribution prevents expensive model calls on simple queries, reducing latency spikes while maintaining exceptionally high output fidelity for complex analytical tasks.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Token Orchestration Network">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 04 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-filter"></i></div>
+                    <h3>04. Low-Latency Contextual Sanitization</h3>
+                    <p>
+                        Inbound client data undergoes rigorous string parsing and token sanitization prior to model submission. Built-in contextual cleaners filter redundant formatting markers, system prompt override attempts, and invalid token sequences. This low-latency sanitization gate guarantees that external AI queries remain focused, safe, and computationally streamlined before passing into core reasoning pipelines.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Sanitization Process">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 05 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>05. Inline WSGI & Command-Line Server Loops</h3>
+                    <p>
+                        The single-file architecture embeds native WSGI server application entry gates directly within execution blocks. By pairing Django’s <code>get_wsgi_application()</code> with standard Python CLI entry hooks, the application can be served immediately using lightweight production gateways like Gunicorn or execute directly via CLI loops for fast local debugging without separate management scripts.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Server Hardware Racks">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 06 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-route"></i></div>
+                    <h3>06. Dynamic Programmatic URL Pattern Resolution</h3>
+                    <p>
+                        URL routing structures are defined using concise, programmatically assembled path arrays mapped directly to inline view functions. This explicit pattern matching bypasses secondary <code>urls.py</code> routing modules, enabling rapid route inspection, dynamic middleware injection per path, and self-contained RESTful endpoint declarations within a single scrollable script.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dynamic URL Routing Concept">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 07 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>07. Isolated Zero-Credential Tracking Logs</h3>
+                    <p>
+                        To ensure cloud logging systems do not inadvertently capture sensitive authorization headers or API keys, Gemini-Django includes an isolated credential scrubber inside its logging middleware. System events, telemetry metrics, and exceptions are sanitized in memory before hitting stdout, ensuring zero authorization key leaks in production observability pipelines.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Security Shield">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 08 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>08. Integrated Single-File Tailwind CSS UI Dashboard</h3>
+                    <p>
+                        Despite existing as a single Python script, Gemini-Django delivers responsive, modern web dashboards. By rendering inline HTML template strings integrated with CDN-backed Tailwind CSS engine loaders, developers can serve rich visual user interfaces, diagnostic dashboards, and AI interaction portals directly from single-file endpoint responses.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern User Interface Dashboard">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 09 -->
+            <div class="char-row">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-wave-square"></i></div>
+                    <h3>09. Asynchronous Token Streaming Channels</h3>
+                    <p>
+                        For real-time generation feedback, the framework supports ASGI asynchronous protocol loops. Utilizing streaming response wrappers, Gemini token chunks are pushed incrementally to the browser as they are generated by <code>gemini-2.5-pro</code>, drastically decreasing time-to-first-token (TTFT) and delivering fluid live-typing UI user experiences.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Stream Flow">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 10 -->
+            <div class="char-row reverse">
+                <div class="char-text">
+                    <div class="char-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>10. Persistent Database Usage Analytics</h3>
+                    <p>
+                        Gemini-Django incorporates programmatic ORM model definitions directly inside the main script. Track transaction metrics, model latency distributions, token usage counts, and system diagnostic logs directly in SQLite or PostgreSQL without needing separate application migration folders or external database configuration suites.
+                    </p>
+                </div>
+                <div class="char-img">
+                    <div class="char-img-wrapper">
+                        <img src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Database Storage Server">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONCLUSION SECTION -->
+    <section class="conclusion-section" id="conclusion">
+        <div class="container">
+            <div class="conclusion-box">
+                <div class="conclusion-text">
+                    <h2>Redefining Python Web Framework Performance</h2>
+                    <p>
+                        Gemini-Django proves that single-file software architecture does not mean sacrificing enterprise-grade capabilities. By combining Django’s battle-tested HTTP routing engine with Google Gemini's dual-pass cognitive reasoning pipelines inside a clean, zero-boilerplate Python core, developers gain unprecedented operational agility. Deploy modern backend services faster, eliminate directory complexity, and maintain absolute security across every AI transaction.
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/rayaantasnim/Gemini-Django" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fa-brands fa-github"></i> Access Repository on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="conclusion-img-wrapper">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Engineering Team Collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINIMALISTIC FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p class="footer-author">Authorized by Rayaan Tasnim with precision</p>
+            <p>© Project Gemini-Django 2026; All rights reserved</p>
+            <span class="footer-brand-tag">Powered by Olympiad Edge</span>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVITY & GSAP SCROLLTRIGGER INTERACTION LAYER -->
+    <script src="script.js"></script>
+</body>
+</html>
